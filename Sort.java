@@ -101,8 +101,10 @@ class Sort{
         int num = arr.length;
         int i, j, k, tmp;
         int operations = 0;
-        for (i = num / 2; i > 0; i = i / 2){ 
+        for (i = num / 2; i > 0; i = i / 2){
+            operations++;
             for (j = i; j < num; j++){
+                operations++;
                 for(k = j - i; k >= 0; k = k - i){
                     operations++;
                     if (arr[k+i] >= arr[k])
