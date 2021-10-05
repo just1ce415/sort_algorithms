@@ -816,14 +816,15 @@ class Main{
         long simshltime14 = (stopTime - startTime) / 3;
 
 
+        
         startTime = System.nanoTime();
-        int randseloper115 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
-        int randseloper215 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
-        int randseloper315 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
-        int randseloper415 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
-        int randseloper515 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
+        long randseloper115 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
+        long randseloper215 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
+        long randseloper315 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
+        long randseloper415 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
+        long randseloper515 = sort.selectionSort(arrayGenerator.generateRandomArray(32768));
         stopTime = System.nanoTime();
-        int randseloper15 = (int)((double)(randseloper115+randseloper215+randseloper315+randseloper415+randseloper515)/5);
+        long randseloper15 = (long)((double)(randseloper115+randseloper215+randseloper315+randseloper415+randseloper515)/5);
         long randseltime15 = (stopTime - startTime) / 5;
         startTime = System.nanoTime();
         int toupseloper15 = sort.selectionSort(arrayGenerator.generateSortedToUp(32768));
@@ -834,21 +835,21 @@ class Main{
         stopTime = System.nanoTime();
         long todownseltime15 = stopTime - startTime;
         startTime = System.nanoTime();
-        int simseloper115 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
-        int simseloper215 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
-        int simseloper315 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
+        long simseloper115 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
+        long simseloper215 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
+        long simseloper315 = sort.selectionSort(arrayGenerator.generateSimpleArray(32768));
         stopTime = System.nanoTime();
-        int simseloper15 = (int)((simseloper115+simseloper215+simseloper315) / 5);
+        long simseloper15 = (int)((simseloper115+simseloper215+simseloper315) / 5);
         long simseltime15 = (stopTime - startTime) / 3;
 
         startTime = System.nanoTime();
-        int randinsoper115 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
-        int randinsoper215 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
-        int randinsoper315 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
-        int randinsoper415 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
-        int randinsoper515 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
+        long randinsoper115 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
+        long randinsoper215 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
+        long randinsoper315 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
+        long randinsoper415 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
+        long randinsoper515 = sort.insertionSort(arrayGenerator.generateRandomArray(32768));
         stopTime = System.nanoTime();
-        int randinsoper15 = (int)((double)(randinsoper115+randinsoper215+randinsoper315+randinsoper415+randinsoper515)/5);
+        long randinsoper15 = (long)((double)(randinsoper115+randinsoper215+randinsoper315+randinsoper415+randinsoper515)/5);
         long randinstime15 = (stopTime - startTime) / 5;
         startTime = System.nanoTime();
         int toupinsoper15 = sort.insertionSort(arrayGenerator.generateSortedToUp(32768));
@@ -859,11 +860,11 @@ class Main{
         stopTime = System.nanoTime();
         long todowninstime15 = stopTime - startTime;
         startTime = System.nanoTime();
-        int siminsoper115 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
-        int siminsoper215 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
-        int siminsoper315 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
+        long siminsoper115 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
+        long siminsoper215 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
+        long siminsoper315 = sort.insertionSort(arrayGenerator.generateSimpleArray(32768));
         stopTime = System.nanoTime();
-        int siminsoper15 = (int)((siminsoper115+siminsoper215+siminsoper315) / 5);
+        long siminsoper15 = (long)((siminsoper115+siminsoper215+siminsoper315) / 5);
         long siminstime15 = (stopTime - startTime) / 3;
 
         startTime = System.nanoTime();
